@@ -30,7 +30,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-
+    - name: Current directory
+      run: |
+        echo ${{ github.workspace }}
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
