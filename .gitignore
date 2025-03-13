@@ -1,0 +1,16 @@
+
+.vs
+
+src/Automobile.Application/bin
+
+src/Automobile.Application/obj
+
+src/Automobile/bin
+
+src/Automobile/obj
+
+tests/Automobile.Application.Tests/bin
+
+tests/Automobile.Application.Tests/obj
+
+src/Automobile/Automobile.Web.csproj.user

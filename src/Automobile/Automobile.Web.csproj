@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <UserSecretsId>7f723475-698a-46c5-9fcc-1def65f5f91f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +14,7 @@
     <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" />
     <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" />
     <PackageReference Include="Microsoft.Identity.Web.UI" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
