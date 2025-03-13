@@ -39,6 +39,7 @@ jobs:
         image: stevennguyen/gha-docker
         tags: latest
         registry: docker.io
+        directory: ./src/Automobile/
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     
