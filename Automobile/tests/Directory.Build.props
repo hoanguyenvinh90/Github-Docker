@@ -1,0 +1,29 @@
+<Project>
+
+  <!-- Import parent above, this is not done automatically. -->
+  <Import Project="../Directory.Build.props" />
+
+  <PropertyGroup>
+	<IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup Label="DefaultPackages">
+	<PackageReference Include="Microsoft.NET.Test.Sdk" />
+	<PackageReference Include="xunit" />
+	<PackageReference Include="xunit.runner.visualstudio">
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  <PrivateAssets>all</PrivateAssets>
+	</PackageReference>
+	<PackageReference Include="coverlet.collector">
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  <PrivateAssets>all</PrivateAssets>
+	</PackageReference>
+	<PackageReference Include="xunit.categories" />
+  </ItemGroup>
+
+  <ItemGroup Label="ImplicitUsings">
+	<Using Include="Xunit"/>
+	<Using Include="Xunit.Categories"/>
+  </ItemGroup>
+
+</Project>
