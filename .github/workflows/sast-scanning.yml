@@ -2,14 +2,14 @@ name: SAST scanning
 on:
     push:
       branches: [ "main" ]
-      paths:
-      - '**.cs'
-      - '**.csproj'
+      # paths:
+      # - '**.cs'
+      # - '**.csproj'
     pull_request:
       branches: [ "main" ]
-      paths:
-      - '**.cs'
-      - '**.csproj'
+      # paths:
+      # - '**.cs'
+      # - '**.csproj'
     # schedule:
     # - cron: '0 8 * * 4'
 jobs:
