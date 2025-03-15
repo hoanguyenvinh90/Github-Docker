@@ -29,8 +29,9 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
-    - run: git checkout HEAD^2
-      if: ${{ github.event_name == 'pull_request' }}
+    - name: Current directory
+      run: |
+        echo ${{ github.workspace }}
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
